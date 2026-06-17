@@ -1,0 +1,220 @@
+:root {
+    --emerald: #00916e;
+    --emerald-dark: #005c45;
+    --emerald-light: #00b386;
+    --gold: #d4af37;
+    --white: #ffffff;
+    --gray-100: #f8f9fa;
+    --gray-200: #e9ecef;
+    --gray-800: #343a40;
+    --dark: #1a1a1a;
+}
+
+/* Global Styles */
+body {
+    background-color: var(--gray-100);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+    background: linear-gradient(135deg, var(--emerald), var(--emerald-dark));
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    color: var(--white) !important;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: var(--white) !important;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--gold) !important;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    background: var(--emerald);
+    color: var(--white);
+    border-radius: 10px 10px 0 0 !important;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--emerald);
+    border-color: var(--emerald);
+}
+
+.btn-primary:hover {
+    background-color: var(--emerald-dark);
+    border-color: var(--emerald-dark);
+}
+
+/* Tables */
+.table {
+    background: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table thead {
+    background: var(--emerald);
+    color: var(--white);
+}
+
+.table th {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+/* Stock Status Indicators */
+.stock-status {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.stock-high {
+    background-color: #28a745;
+}
+
+.stock-medium {
+    background-color: #ffc107;
+}
+
+.stock-low {
+    background-color: #dc3545;
+}
+
+/* Modals */
+.modal-header {
+    background: var(--emerald);
+    color: var(--white);
+}
+
+.modal-title {
+    font-weight: 600;
+}
+
+.close {
+    color: var(--white);
+}
+
+/* Forms */
+.form-control:focus {
+    border-color: var(--emerald);
+    box-shadow: 0 0 0 0.2rem rgba(0,145,110,0.25);
+}
+
+/* Custom Classes */
+.page-title {
+    color: var(--emerald-dark);
+    font-weight: 600;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--emerald);
+}
+
+/* Footer Styles */
+.footer {
+    background: linear-gradient(135deg, var(--emerald-dark), var(--emerald));
+    color: var(--white);
+    padding: 2rem 0 1rem;
+    margin-top: 3rem;
+}
+
+.footer h5 {
+    color: var(--gold);
+    margin-bottom: 1rem;
+}
+
+.footer a {
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: var(--gold);
+}
+
+.footer hr {
+    border-color: var(--emerald-light);
+    opacity: 0.2;
+}
+
+.footer .text-muted {
+    color: rgba(255,255,255,0.8) !important;
+}
+
+
+
+
+/* Styles pour le body et le conteneur principal */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.container {
+    flex: 1 0 auto;
+}
+
+/* Footer Styles modifiés */
+.footer {
+    background: linear-gradient(135deg, var(--emerald-dark), var(--emerald));
+    color: var(--white);
+    padding: 2rem 0 1rem;
+    flex-shrink: 0; /* Empêche le footer de se rétrécir */
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Reste des styles footer inchangés */
+.footer h5 {
+    color: var(--gold);
+    margin-bottom: 1rem;
+}
+
+.footer a {
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: var(--gold);
+}
+
+.footer hr {
+    border-color: var(--emerald-light);
+    opacity: 0.2;
+}
+
+.footer .text-muted {
+    color: rgba(255,255,255,0.8) !important;
+}
